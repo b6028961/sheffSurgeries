@@ -1,7 +1,7 @@
 package com.smartin
 
 class Appointment {
-String appDate
+Date appDate
 String time
 int appDuration
 String roomNumber

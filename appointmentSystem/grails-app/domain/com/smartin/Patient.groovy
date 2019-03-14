@@ -1,6 +1,6 @@
-ppackage com.smartin
+package com.smartin
 
-class Paitent {
+class Patient {
 String patientName
 String patientAddress
 String patientResidence
