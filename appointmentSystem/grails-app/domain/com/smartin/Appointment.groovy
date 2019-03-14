@@ -5,6 +5,7 @@ Date appDate
 String time
 int appDuration
 String roomNumber
+Patient patient
     static constraints = {
 appDate blank:false, nullable:false
 time blank:false, nullable:false

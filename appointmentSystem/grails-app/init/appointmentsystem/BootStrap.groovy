@@ -115,6 +115,9 @@ def presForjHouser=new Prescription(
 	totalCost:'£19.20',
 	dateIssued:('05/11/2017'),
 	patientPaying:'false').save()
+
+surgeSurgery.addToDoctors(drJDowley)
+surgeSurgery.addToDoctors(drASimpson)
     }
     def destroy = {
     }

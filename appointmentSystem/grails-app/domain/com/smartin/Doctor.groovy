@@ -9,6 +9,7 @@ String password
 String doctorOffice
 String doctorPhone
 String bio
+
     static constraints = {
 fullName blank:false, nullable:false
 qualification blank:false, nullable:false
