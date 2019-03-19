@@ -9,7 +9,7 @@ String password
 String doctorOffice
 String doctorPhone
 String bio
-
+static hasMany=[prescriptions:Prescription, appointments:Appointment, patients:Patient, nurses:Nurse]
     static constraints = {
 fullName blank:false, nullable:false
 qualification blank:false, nullable:false

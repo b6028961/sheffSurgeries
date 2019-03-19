@@ -46,18 +46,18 @@ def sDavids=new Patient(
 	patientName:'Sam Davids',
 	patientAddress:'4 Salis Street Bridlington',
 	patientResidence:'Sheffield',
-	patientDob:('20/09/1993'),
+	patientDob:new Date('20/09/1993'),
 	patientID:'R4346',
-	dateRegistered:('04/01/2017'),
+	dateRegistered:new Date('04/01/2017'),
 	patientPhone:'0165 893 2810').save()
 
 def bHummel=new Patient(
 	patientName:'Billy Hummel',
 	patientAddress:'655 Woodylead Road Sheffield',
 	patientResidence:'Doncaster',
-	patientDob:('18/03/1969'),
+	patientDob: new Date('18/03/1969'),
 	patientID:'E2291',
-	dateRegistered:('30/11/2015'),
+	dateRegistered:new Date('30/11/2015'),
 	patientPhone:'079 5847 4954').save()
 
 def jJones=new Receptionist(
@@ -89,35 +89,61 @@ def cGrantly=new Nurse(
 	nursePhone:'079 3722 2223').save()
 
 def appForSDavids=new Appointment(
-	appDate:('11/05/2019'),
+	appDate:new Date('11/05/2019'),
 	appTime:'200pm',
 	appDuration:60,
-	roomNumber:'A-1802').save()
+	roomNumber:'A802',
+	patientName:bHummel).save()
 
 def appForRWellard=new Appointment(
-	appDate:('11/03/2020'),
+	appDate:new Date('11/03/2020'),
 	appTime:'415pm',
 	appDuration:40,
-	roomNumber:'A-63').save()
+	roomNumber:'A63',
+	patientName:sDavids).save()
 
 def presForBHummel=new Prescription(
 	pharmacyName:'New Green Pharmacy',
 	prescripNumber:58578,
 	medicine:'Calpol',
 	totalCost:'£6.60',
-	dateIssued:('02/06/2018'),
-	patientPaying:'true').save()
+	dateIssued:new Date('02/06/2018'),
+	patientPaying:'false').save()
 
 def presForjHouser=new Prescription(
 	pharmacyName:'South Seas Pharmacy',
 	prescripNumber:950495,
 	medicine:'Xerna Pillforicus',
-	totalCost:'£19.20',
-	dateIssued:('05/11/2017'),
-	patientPaying:'false').save()
+	totalCost:'£9.20',
+	dateIssued:new Date('05/11/2017'),
+	patientPaying:'true').save()
 
 surgeSurgery.addToDoctors(drJDowley)
 surgeSurgery.addToDoctors(drASimpson)
+drASimpson.addToPrescriptions(presForBHummel)
+drASimpson.addToPrescriptions(presForjHouser)
+pointonSurgery.addToReceptionists(jJones)
+pointonSurgery.addToReceptionists(fPrince)
+surgeSurgery.addToNurses(cGrantly)
+pointonSurgery.addToNurses(sLove)
+drASimpson.addToAppointments(appForRWellard)
+drJDowley.addToAppointments(appForSDavids)
+bHummel.addToPrescriptions(presForBHummel)
+sDavids.addToPrescriptions(presForjHouser)
+bHummel.addToDoctors(drASimpson)
+bHummel.addToDoctors(drJDowley)
+drASimpson.addToPatients(sDavids)
+drJDowley.addToNurses(sLove)
+drASimpson.addToNurses(sLove)
+cGrantly.addToDoctors(drASimpson)
+sDavids.addToSurgeries(surgeSurgery)
+bHummel.addToSurgeries(pointonSurgery)
+pointonSurgery.addToPatients(sDavids)
+pointonSurgery.addToAppointments(appForRWellard)
+surgeSurgery.addToAppointments(appForSDavids)
+appForSDavids.addToSurgeries(pointonSurgery)
+
+
     }
     def destroy = {
     }
