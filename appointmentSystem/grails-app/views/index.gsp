@@ -8,7 +8,7 @@
 <div class="first">
 <h3>Receptionist Login</h3>
 <button type="button" class="btn btn-success">
-<g:link controller="receptionist" action="ReceptionistPage">Sign in</g:link>
+<g:link controller="receptionist" action="ReceptionistLogin">Sign in</g:link>
 </button>
 </div>
 
@@ -20,7 +20,7 @@
 <div class="second">
 <h3>Doctor Login</h3>
 <button type="button" class="btn btn-success">
-<g:link controller="doctor" action="DoctorPage">Sign in</g:link>
+<g:link controller="doctor" action="DoctorLogin">Sign in</g:link>
 </button>
 </div>
 
