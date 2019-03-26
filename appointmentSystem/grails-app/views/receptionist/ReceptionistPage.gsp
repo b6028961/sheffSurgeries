@@ -6,24 +6,20 @@
     <title>Hospital Appointment System</title>
 </head>
 <body>
-
 <div class="row">
 
-<div class="Appointment">
-	<h3>Appointment System</h3>
+<div class="Patient">
 
 <p>Hello</p>
 
 	<button type="button" class "btn btn-success">
 
-	<g:link controller="Appointment" action="create">Add Appointment</g:link>
+	<g:link controller="Patient" action="create">Add Patient</g:link>
 	
 	</button>
 </div>
 
-
 <div class="Doctor">
-	<h3>Doctor System</h3>
 
 <p>Hello</p>
 
@@ -33,6 +29,32 @@
 	
 	</button>
 </div>
+
+<div class="Nurse">
+
+<p>Hello</p>
+
+	<button type="button" class "btn btn-success">
+
+	<g:link controller="Nurse" action="create">Add Nurse</g:link>
+	
+	</button>
+</div>
+
+<div class="Receptionist">
+
+<p>Hello</p>
+
+	<button type="button" class "btn btn-success">
+
+	<g:link controller="Receptionist" action="create">Add Receptionist</g:link>
+	
+	</button>
+</div>
+
+
+
+
 
 <div id="content" role="main">
     <section class="row colset-2-its">

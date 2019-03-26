@@ -27,6 +27,8 @@
 
 <g:layoutBody/>
 
+<button onclick 
+
 <div class="footer row" role="contentinfo">
     <div class="col">
         <a href="http://guides.grails.org" target="_blank">

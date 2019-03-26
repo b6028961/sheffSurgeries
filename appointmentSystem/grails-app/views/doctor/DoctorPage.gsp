@@ -9,27 +9,13 @@
 
 <div class="row">
 
-<div class="Appointment">
-	<h3>Appointment System</h3>
+<div class="Prescription">
 
 <p>Hello</p>
 
 	<button type="button" class "btn btn-success">
 
-	<g:link controller="Appointment" action="create">Add Appointment</g:link>
-	
-	</button>
-</div>
-
-
-<div class="Doctor">
-	<h3>Doctor System</h3>
-
-<p>Hello</p>
-
-	<button type="button" class "btn btn-success">
-
-	<g:link controller="Doctor" action="create">Add Doctor</g:link>
+	<g:link controller="Prescription" action="create">Add Prescription</g:link>
 	
 	</button>
 </div>
