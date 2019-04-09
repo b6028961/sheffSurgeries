@@ -10,6 +10,14 @@ render view:'DoctorLogin'
 
 }
 
+def DoctorLogout() {
+
+session.user = null
+
+redirect(uri:'/')
+
+}
+
 
 def validate() {
 def user = Doctor.findByDoctorEmail(params.email)
@@ -22,9 +30,5 @@ flash.message = "Invalid email and password."
 render view:'DoctorLogin'
 }
 }
-def logout = {
- session.user = null
- redirect(uri:'/')
- }
 
 }

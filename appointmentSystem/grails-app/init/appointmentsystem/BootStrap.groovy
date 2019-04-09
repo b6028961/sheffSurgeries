@@ -64,7 +64,7 @@ def jJones=new Receptionist(
 	recepName:'Jim Jones',
 	recepEmail:'JJonesy11@hotmail.com',
 	recepUsername:'jJones',
-	recepPassword:'eggontoast1',
+	recepPassword:'pass',
 	recepPhone:'079 3645 3823').save()
 
 def fPrince=new Receptionist(
@@ -98,7 +98,7 @@ def appForSDavids=new Appointment(
 def appForRWellard=new Appointment(
 	appDate:new Date('11/03/2020'),
 	appTime:'415pm',
-	appDuration:40,
+	appDuration:45,
 	roomNumber:'A63',
 	patientName:sDavids).save()
 
@@ -116,7 +116,7 @@ def presForjHouser=new Prescription(
 	medicine:'Xerna Pillforicus',
 	totalCost:'£9.20',
 	dateIssued:new Date('05/11/2017'),
-	patientPaying:'true').save()
+	patientPaying:'true').save() 
 
 surgeSurgery.addToDoctors(drJDowley)
 surgeSurgery.addToDoctors(drASimpson)

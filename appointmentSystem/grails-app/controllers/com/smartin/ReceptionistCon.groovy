@@ -10,10 +10,21 @@ render view:'ReceptionistLogin'
 
 }
 
+def ReceptionistLogout() {
+
+session.user = null
+
+redirect(uri:'/')
+
+}
+
+
+
+
 
 def validate() {
 def user = Receptionist.findByRecepUsername(params.username)
-if (user && user.password == params.password){
+if (user && user.recepPassword == params.password){
 session.user = user
 render view:'ReceptionistPage'
 }
@@ -22,10 +33,6 @@ flash.message = "Invalid username and password."
 render view:'ReceptionistLogin'
 }
 }
-def logout = {
- session.user = null
- redirect(uri:'/')
- }
+
 
 }
-

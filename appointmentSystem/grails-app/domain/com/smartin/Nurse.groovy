@@ -8,6 +8,9 @@ String nurseOffice
 String nursePhone
 static hasMany=[doctors:Doctor]
 static belongsTo=[Doctor]
+String toString() {
+return nurseName
+}
     static constraints = {
 nurseName blank:false, nullable:false
 qualifications blank:false, nullable:false

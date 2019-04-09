@@ -8,46 +8,52 @@
 <body>
 <div class="row">
 
+ <title>Hospital Appointment System</title>
+
 <div class="Patient">
 
-<p>Hello</p>
+<p>Add Patient</p>
 
-	<button type="button" class "btn btn-success">
+	<button type="button" class "btn-success">
 
-	<g:link controller="Patient" action="create">Add Patient</g:link>
+	<g:link controller="Patient" action="create">Add</g:link>
 	
 	</button>
 </div>
+
+
 
 <div class="Doctor">
 
-<p>Hello</p>
+<p>Add Doctor</p>
 
-	<button type="button" class "btn btn-success">
+	<button type="button" class "btn-success">
 
-	<g:link controller="Doctor" action="create">Add Doctor</g:link>
+	<g:link controller="Doctor" action="create">Add</g:link>
 	
 	</button>
 </div>
+
 
 <div class="Nurse">
 
-<p>Hello</p>
+<p>Add Nurse</p>
 
-	<button type="button" class "btn btn-success">
+	<button type="button" class "btn-success">
 
-	<g:link controller="Nurse" action="create">Add Nurse</g:link>
+	<g:link controller="Nurse" action="create">Add</g:link>
 	
 	</button>
 </div>
+
 
 <div class="Receptionist">
 
-<p>Hello</p>
+<p>Add Receptionist</p>
 
-	<button type="button" class "btn btn-success">
+	<button type="button" class "btn-success">
 
-	<g:link controller="Receptionist" action="create">Add Receptionist</g:link>
+	<g:link controller="Receptionist" action="create">Add</g:link>
 	
 	</button>
 </div>
@@ -55,6 +61,29 @@
 
 
 
+<div class="Patient">
+
+<p>Search for Patients</p>
+<button type="button" class="btn-success">
+<g:link controller="Patient" action="advSearchPatients">Search For Patients</g:link>
+</button>
+</div>
+
+<br />
+
+<br />
+
+
+<div class="Logout">
+
+
+<button type="button" class "btn-success">
+
+	<g:link controller="Receptionist" action="ReceptionistLogout">Logout</g:link>
+	
+	</button>
+
+</div>
 
 <div id="content" role="main">
     <section class="row colset-2-its">
