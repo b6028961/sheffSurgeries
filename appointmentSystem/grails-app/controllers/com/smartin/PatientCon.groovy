@@ -9,7 +9,7 @@ def advSearchPatients() {
 render view:'advSearchPatients'
 }
 
-def advResults() {
+def advResultsPatient() {
 def patientProps = Patient.metaClass.properties*.name
 def patients = Patient.withCriteria {
  "${params.queryType}" {
@@ -19,8 +19,8 @@ params.each { field, value ->
  }
  }
  }
-return [ patients : patients ]
  }
+return [ patients : patients ]
 }
 }
 

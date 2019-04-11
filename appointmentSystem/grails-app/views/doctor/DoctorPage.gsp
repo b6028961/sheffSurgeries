@@ -14,7 +14,7 @@
 
 <p>Search for Prescriptions</p>
 <button type="button" class="btn-success">
-<g:link controller="Prescription" action="advSearchPrescriptions">Search For Prescriptions</g:link>
+<g:link controller="Prescription" action="advSearchPrescription">Search For Prescriptions</g:link>
 </button>
 </div>
 

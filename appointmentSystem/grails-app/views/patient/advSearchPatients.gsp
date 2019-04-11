@@ -10,7 +10,7 @@
 <formset>
  <legend>Search for Patients</legend>
 <table>
- <g:form action="advResults">
+ <g:form action="advResultsPatient">
 <tr>
  <td>Patient Name</td>
  <td><g:textField name="patientName" /></td>

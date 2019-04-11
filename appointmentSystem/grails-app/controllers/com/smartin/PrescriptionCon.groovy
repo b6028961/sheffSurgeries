@@ -4,12 +4,12 @@ class PrescriptionController {
 
     def scaffold=Prescription
 
-def advSearchPrescriptions() {
+def advSearchPrescription() {
 
-render view:'advSearchPrescriptions'
+render view:'advSearchPrescription'
 }
 
-def advResultsPres() {
+def advResultPrescription() {
 def prescriptionProps = Prescription.metaClass.properties*.name
 def prescriptions = Prescription.withCriteria {
  "${params.queryType}" {
@@ -19,7 +19,8 @@ params.each { field, value ->
  }
  }
  }
+}
 return [ prescriptions : prescriptions ]
- }
+ 
 }
 }
