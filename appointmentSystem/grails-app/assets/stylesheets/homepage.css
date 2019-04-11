@@ -1,5 +1,5 @@
-.first{background-color:#9FFF33}
-.second{background-color:#C2D506}
+.first{background-color:#C2D506; width:40%;}
+.second{background-color:#C2D506; width:40%;}
 .Patient{padding:15px 32px; font-size:24px; width:100%; }
 .Doctor{font-size:24px; padding:15px 32px; width:100%; }
 .Nurse{font-size:24px; padding:15px 32px; width:100%; }
@@ -8,6 +8,7 @@
 .Appointment{font-size:24px; padding:15px 32px; width:100%; }
 .Logout{font-size:24px; padding:15px 32px; width:100%; }
 .btn-logout{font-size:10px; padding:15px 32px; height:20px; width:30px; }
-.btn-login{font-size:10px; height:36px; width:24px; }
+.btn-login{font-size:32px; height:36px; width:40%; }
 .loginText{font-size:32px;}
-.prescriptionResults{word-break:break-all; padding:10px;}
+.prescriptionResults{margin:right; padding:10px;}
+.prescriptionResultText{margin:left;}

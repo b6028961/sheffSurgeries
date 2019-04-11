@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<asset:stylesheet src="homepage.css"/>
     <meta name="layout" content="main"/>
     <title>Hospital Appointment System</title>
 </head>
@@ -8,7 +9,7 @@
 <asset:image src="hospital.jpeg"/>
 <h3>Welcome to the Hospital Appointment System</h3>
 <div class="first">
-<p class="loginText">Receptionist Login</p>
+<h3>Receptionist Login</h3>
 <button type="button" class="btn-login">
 <g:link controller="receptionist" action="ReceptionistLogin">Sign in</g:link>
 </button>
@@ -20,7 +21,7 @@
 <br>
 
 <div class="second">
-<p class=loginText">Doctor Login</p>
+<h3>Doctor Login</h3>
 <button type="button" class="btn-login">
 <g:link controller="doctor" action="DoctorLogin">Sign in</g:link>
 </button>
