@@ -12,6 +12,14 @@
 
 <div class="Prescription">
 
+<p>Search for Prescriptions</p>
+<button type="button" class="btn-success">
+<g:link controller="Prescription" action="advSearchPrescriptions">Search For Prescriptions</g:link>
+</button>
+</div>
+
+<div class="Prescription">
+
 <p>Add Prescription</p>
 
 	<button type="button" class "btn-success">

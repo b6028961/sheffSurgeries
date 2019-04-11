@@ -8,9 +8,9 @@
 <div class="row">
 
 <formset>
- <legend>Advanced Search for Patients</legend>
+ <legend>Search for Patients</legend>
 <table>
- <g:link controller="Patient" form action="advResults">
+ <g:form action="advResults">
 <tr>
  <td>Patient Name</td>
  <td><g:textField name="patientName" /></td>
@@ -36,7 +36,6 @@ ${it.radio} ${it.label}
  <td>
  <g:submitButton name="search" value="Search"/></td>
  </tr>
-</g:link>
  </g:form>
  </table>
  </formset>
